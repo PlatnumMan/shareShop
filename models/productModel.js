@@ -12,7 +12,8 @@ var productSchema = new mongoose.Schema(
     quantity: { type: Number, default: 0, required: true },
     sold: { type: Number, default: 0 },
     images: [],
-    color: { type: String, required: true },
+    color: [],
+    tags: [],
     ratings: [
       {
         star: Number,

@@ -17,6 +17,8 @@ const categoryRouter = require('./routes/prodcategoryRoute');
 const blogCatRouter = require('./routes/blogCatRoute');
 const brandRouter = require('./routes/brandRoute');
 const couponRouter = require('./routes/couponRoute');
+const colorRouter = require('./routes/colorRoute');
+const enqRouter = require('./routes/enqRoute');
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
@@ -30,6 +32,8 @@ app.use('/api/category', categoryRouter);
 app.use('/api/blogcategory', blogCatRouter);
 app.use('/api/brand', brandRouter);
 app.use('/api/coupon', couponRouter);
+app.use('/api/color', colorRouter);
+app.use('/api/enquiry', enqRouter);
 
 app.use(notFound);
 app.use(errorHandler);
